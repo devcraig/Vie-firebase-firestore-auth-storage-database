@@ -6,6 +6,11 @@ import Vuetify from 'vuetify'
 import router from './routes'
 import store from './store/store'
 import FirebaseAuthPlugin from './firebase/'
+// import firebase from './Firebase/FirebaseInit'
+
+//  const firestore = firebase.firestore();
+//  const settings = {timestampsInSnapshots: true};
+//  firestore.settings(settings);
 
 Vue.config.productionTip = false
 Vue.use(FirebaseAuthPlugin)

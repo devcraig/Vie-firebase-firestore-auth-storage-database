@@ -3,16 +3,16 @@ import Firebase from 'firebase'
 import 'firebase/firestore'
 
 const config = {
-  apiKey: 'YOUR_FIREBASE_API_KAY',
-  authDomain: 'something.firebaseapp.com',
-  databaseURL: 'https://something.firebaseio.com',
-  projectId: 'something',
-  storageBucket: 'something.appspot.com',
-  messagingSenderId: 'SOME_NUMBER'
+  apiKey: "AIzaSyBZhAsSxet9NRqYzQajGrsdxVXklpvMDIw",
+  authDomain: "consilium-c139e.firebaseapp.com",
+  databaseURL: "https://consilium-c139e.firebaseio.com",
+  projectId: "consilium-c139e",
+  storageBucket: "consilium-c139e.appspot.com",
+  messagingSenderId: "200947524504"
 }
 
 export default {
-  install: (Vue, options) => {
+  install: (Vue, options ) => {
     const firebase = Firebase.initializeApp(config)
     const auth = firebase.auth()
     Vue.prototype.$auth = {

@@ -1,18 +1,21 @@
 # vue-auth-bolierplate
 
-
 ## Firebase / Firestore Setup
+
 go to
+
 ```
 http://firebase.coogle.com
 ```
-1. Under the Authentication tab - select email/password and click the activate switch.
-  - create a user and set a field in that user 
+
+1. Under the Authentication tab - select email/password and click the activate switch. create a user and set a field in that user
+
   ```
   Name: isAdmin  
   Type: boolean
   Value: true
   ```
+
   This will be your admin user. You can add more admin users if you like.
 
 2. Under the database tab - Create a Cloud Firestore database

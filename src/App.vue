@@ -1,29 +1,37 @@
 <template>
   <v-app>
-    <v-toolbar app>
+    <v-toolbar app class="primary">
       <v-toolbar-title class="headline text-uppercase">
-        <span class="font-weight-light">VueAuth</span>
+        <span class="font-weight-bold" style="color:white;">Concord</span>
       </v-toolbar-title>
       <v-spacer></v-spacer>
       <v-btn
         flat
-        :to="{name: 'home'}"
+        v-show="!user" 
+        :to="{name: 'prehome'}"
       >
-        <span class="mr-2">Home</span>
+        <span class="mr-2" style="color:white;">Home</span>
       </v-btn>
       <v-btn
         flat
         v-show="!user" 
         :to="{name: 'signin'}"
       >
-        <span class="mr-2">Login</span>
+        <span class="mr-2" style="color:white;">Login</span>
       </v-btn>
       <v-btn
         flat
         v-show="!user" 
         :to="{name: 'signup'}"
       >
-        <span class="mr-2">Sign Up</span>
+        <span class="mr-2" style="color:white;">Sign Up</span>
+      </v-btn>
+      <v-btn
+        flat
+        v-show="!!user" 
+        :to="{name: 'home'}"
+      >
+        <span class="mr-2" style="color:white;">Home</span>
       </v-btn>
       <v-btn
         flat

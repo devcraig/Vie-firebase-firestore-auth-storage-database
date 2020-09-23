@@ -16,8 +16,8 @@
 <script>
   export default {
     data: () => ({
-      user: 'Ciaran',
-      userLevel: 'Admin'
+      user: 'Devin',
+      userLevel: 'Owner'
     })
   }
 </script>

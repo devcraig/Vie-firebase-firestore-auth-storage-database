@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import store from '@/store/store'
 import Home from '@/views/Home'
+import NoAuth_Home from '@/views/NoAuth_Home'
 import SignIn from '@/views/SignIn'
 import SignOut from '@/views/SignOut'
 import SignUp from '@/views/SignUp'
@@ -14,6 +15,11 @@ const router = new Router({
   routes: [
     {
       path: '/',
+      name: 'prehome',
+      component: NoAuth_Home
+    },
+    {
+      path: '/home',
       name: 'home',
       component: Home
     },
