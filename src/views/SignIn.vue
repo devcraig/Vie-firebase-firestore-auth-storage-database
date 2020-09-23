@@ -55,7 +55,7 @@ export default {
   computed: {
     ...mapGetters(['user']),
     nextRoute () {
-      return this.$route.query.redirect || '/'
+      return this.$route.query.redirect || '/home'
     }
   },
   data () {

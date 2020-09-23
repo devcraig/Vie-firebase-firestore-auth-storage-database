@@ -38,14 +38,14 @@
         v-show="!!user"
         :to="{name: 'profile'}"
       >
-        <span class="mr-2">Profile</span>
+        <span class="mr-2" style="color:white;">Profile</span>
       </v-btn>
       <v-btn
         flat
         v-show="!!user" 
         :to="{name: 'signout'}"
       >
-        <span class="mr-2">Signout</span>
+        <span class="mr-2" style="color:white;">Signout</span>
       </v-btn>
     </v-toolbar>
 
